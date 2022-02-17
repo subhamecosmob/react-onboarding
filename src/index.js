@@ -2,7 +2,8 @@ import  ReactDOM  from "react-dom";
 
 import React, { useState } from 'react'
 import List from "./List";
-import { Conditionalrendering } from "./Conditionalrendering";
+import  Conditionalrendering  from "./Conditionalrendering";
+import Style from "./Style";
 
 export const Reactcomponent = () => {
 
@@ -13,6 +14,6 @@ export const Reactcomponent = () => {
     <input value={input} onChange={(e)=>setInput(e.target.value)} />
   )}
 
-ReactDOM.render(<Conditionalrendering/> , document.querySelector("#root"))
+ReactDOM.render(<Style/> , document.querySelector("#root"))
 
 

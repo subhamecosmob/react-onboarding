@@ -11,9 +11,12 @@ const renderList = () => {
     
 }  
 
-export const Conditionalrendering = () => {
+ const Conditionalrendering = () => {
 
   return (
     <div>{renderList()}</div>
   )
 }
+
+
+export default Conditionalrendering

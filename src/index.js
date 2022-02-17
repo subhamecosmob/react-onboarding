@@ -7,6 +7,7 @@ import Style from "./Style";
 import HttpRequest from "./HttpRequest";
 import CustomHook from "./CustomHook";
 import Form from "./Form";
+import ClassComponent from "./ClassComponent";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -14,4 +15,4 @@ export const Reactcomponent = () => {
 	return <input value={input} onChange={(e) => setInput(e.target.value)} />;
 };
 
-ReactDOM.render(<Form />, document.querySelector("#root"));
+ReactDOM.render(<ClassComponent />, document.querySelector("#root"));

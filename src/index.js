@@ -5,6 +5,7 @@ import List from "./List";
 import Conditionalrendering from "./Conditionalrendering";
 import Style from "./Style";
 import HttpRequest from "./HttpRequest";
+import CustomHook from "./CustomHook";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -12,4 +13,4 @@ export const Reactcomponent = () => {
 	return <input value={input} onChange={(e) => setInput(e.target.value)} />;
 };
 
-ReactDOM.render(<HttpRequest />, document.querySelector("#root"));
+ReactDOM.render(<CustomHook />, document.querySelector("#root"));

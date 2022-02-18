@@ -5,7 +5,6 @@ const Ref = () => {
 	const inputRef = useRef();
 
 	const focus = () => {
-		console.log(inputRef.current, "Asdasdasda");
 		inputRef.current.focus();
 	};
 	return (

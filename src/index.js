@@ -10,6 +10,7 @@ import Form from "./Form";
 import ClassComponent from "./ClassComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactRouting from "./ReactRouting";
+import Portals from "./Portals";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -27,6 +28,7 @@ ReactDOM.render(
 			<Route path='httprequest' element={<HttpRequest />} />
 			<Route path='classcomponent' element={<ClassComponent />} />
 			<Route path='form' element={<Form />} />
+			<Route path='Portals' element={<Portals />} />
 		</Routes>
 	</BrowserRouter>,
 	document.querySelector("#root")

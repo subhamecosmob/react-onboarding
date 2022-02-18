@@ -11,6 +11,7 @@ const ReactRouting = () => {
 			<Link to='classcomponent'>Classcomponent</Link>
 			<Link to='conditionalrendering'>ConditionalRendering</Link>
 			<Link to='form'>Form</Link>
+			<Link to='Portals'>Portals</Link>
 		</nav>
 	);
 };

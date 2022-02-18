@@ -8,6 +8,8 @@ import HttpRequest from "./HttpRequest";
 import CustomHook from "./CustomHook";
 import Form from "./Form";
 import ClassComponent from "./ClassComponent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ReactRouting from "./ReactRouting";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -15,4 +17,17 @@ export const Reactcomponent = () => {
 	return <input value={input} onChange={(e) => setInput(e.target.value)} />;
 };
 
-ReactDOM.render(<ClassComponent />, document.querySelector("#root"));
+ReactDOM.render(
+	<BrowserRouter>
+		<ReactRouting />
+		<Routes>
+			<Route path='/' element={<Style />} />
+			<Route path='conditionalrendering' element={<Conditionalrendering />} />
+			<Route path='list' element={<List />} />
+			<Route path='httprequest' element={<HttpRequest />} />
+			<Route path='classcomponent' element={<ClassComponent />} />
+			<Route path='form' element={<Form />} />
+		</Routes>
+	</BrowserRouter>,
+	document.querySelector("#root")
+);

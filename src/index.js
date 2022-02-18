@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import List from "./List";
 import Conditionalrendering from "./Conditionalrendering";
 import Style from "./Style";
@@ -11,6 +11,7 @@ import ClassComponent from "./ClassComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactRouting from "./ReactRouting";
 import Portals from "./Portals";
+import Fragments from "./Fragments";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -29,6 +30,7 @@ ReactDOM.render(
 			<Route path='classcomponent' element={<ClassComponent />} />
 			<Route path='form' element={<Form />} />
 			<Route path='Portals' element={<Portals />} />
+			<Route path='Fragments' element={<Fragments />} />
 		</Routes>
 	</BrowserRouter>,
 	document.querySelector("#root")

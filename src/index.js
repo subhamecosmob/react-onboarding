@@ -12,6 +12,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactRouting from "./ReactRouting";
 import Portals from "./Portals";
 import Fragments from "./Fragments";
+import Ref from "./Ref";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -31,6 +32,7 @@ ReactDOM.render(
 			<Route path='form' element={<Form />} />
 			<Route path='Portals' element={<Portals />} />
 			<Route path='Fragments' element={<Fragments />} />
+			<Route path='Ref' element={<Ref />} />
 		</Routes>
 	</BrowserRouter>,
 	document.querySelector("#root")

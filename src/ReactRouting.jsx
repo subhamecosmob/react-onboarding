@@ -13,6 +13,7 @@ const ReactRouting = () => {
 			<Link to='form'>Form</Link>
 			<Link to='Portals'>Portals</Link>
 			<Link to='Fragments'>Fragments</Link>
+			<Link to='Ref'>Ref</Link>
 		</nav>
 	);
 };

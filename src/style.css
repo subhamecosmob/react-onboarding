@@ -51,3 +51,8 @@ a {
 a:hover {
 	color: #000000b5;
 }
+
+.input:focus {
+	background-color: yellow;
+	padding: 2rem;
+}

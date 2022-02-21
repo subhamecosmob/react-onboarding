@@ -30,7 +30,7 @@ const ReactUseCallBack = () => {
 	);
 
 	let onClick = useCallback(() => {
-		console.log("using use callback");
+		console.log("using use callback.");
 	}, []);
 
 	return (

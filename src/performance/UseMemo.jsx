@@ -20,7 +20,7 @@ const UseMemo = () => {
 	let [renderComponent, setRenderComponent] = useState(0);
 	let [color] = useState("blue");
 
-	console.log("rendering main component");
+	console.log("rendering main component.");
 
 	let params = useMemo(
 		() => ({

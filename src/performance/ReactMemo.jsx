@@ -1,7 +1,7 @@
 import { useState, memo } from "react";
 
 const ComponentUsingReactMemo = ({ color }) => {
-	console.log("rendering using react memo");
+	console.log("rendering using react memo.");
 	return (
 		<>
 			<div style={{ backgroundColor: color, height: 100, width: 100 }}></div>

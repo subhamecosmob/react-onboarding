@@ -15,6 +15,7 @@ import Fragments from "./Fragments";
 import Ref from "./Ref";
 import ReactMemo from "./performance/ReactMemo";
 import UseMemo from "./performance/UseMemo";
+import ReactUseCallBack from "./performance/UseCallBack";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -35,7 +36,7 @@ ReactDOM.render(
 			<Route path='Portals' element={<Portals />} />
 			<Route path='Fragments' element={<Fragments />} />
 			<Route path='Ref' element={<Ref />} />
-			<Route path='ReactMemo' element={<UseMemo />} />
+			<Route path='ReactMemo' element={<ReactUseCallBack />} />
 		</Routes>
 	</BrowserRouter>,
 	document.querySelector("#root")

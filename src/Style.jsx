@@ -5,8 +5,8 @@ import "./style.css";
 
 const styledBox = (todo) => {
 	return (
-		<div className='todo_holder'>
-			<h1 key={todo.id}>{todo.title}</h1>
+		<div key={todo.id} className='todo_holder'>
+			<h1>{todo.title}</h1>
 		</div>
 	);
 };

@@ -1,4 +1,5 @@
 import { useState, memo } from "react";
+
 const ComponentUsingReactMemo = ({ color }) => {
 	console.log("rendering using react memo");
 	return (

@@ -13,6 +13,7 @@ import ReactRouting from "./ReactRouting";
 import Portals from "./Portals";
 import Fragments from "./Fragments";
 import Ref from "./Ref";
+import ReactMemo from "./performance/ReactMemo";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -33,6 +34,7 @@ ReactDOM.render(
 			<Route path='Portals' element={<Portals />} />
 			<Route path='Fragments' element={<Fragments />} />
 			<Route path='Ref' element={<Ref />} />
+			<Route path='ReactMemo' element={<ReactMemo />} />
 		</Routes>
 	</BrowserRouter>,
 	document.querySelector("#root")

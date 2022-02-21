@@ -14,6 +14,7 @@ const ReactRouting = () => {
 			<Link to='Portals'>Portals</Link>
 			<Link to='Fragments'>Fragments</Link>
 			<Link to='Ref'>Ref</Link>
+			<Link to='ReactMemo'>React-Memo</Link>
 		</nav>
 	);
 };

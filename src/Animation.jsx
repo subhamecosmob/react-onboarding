@@ -23,7 +23,7 @@ const Animation = () => {
 				<button
 					className='positive ui button'
 					onClick={() => changeSlide(++slide)}>
-					Swipe ->
+					Swipe
 				</button>
 			</div>
 		</div>

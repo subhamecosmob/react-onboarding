@@ -71,14 +71,22 @@ a:hover {
 	font-size: 5rem;
 	color: #f0616f;
 	font-weight: bolder;
-	animation: slideAnimation 500ms linear;
+
+	animation: slideAnimation 1s ease-in-out;
 }
 
 @keyframes slideAnimation {
-	from {
+	0% {
 		transform: translateX(50rem);
 	}
-	to {
+	50% {
+		transform: translateX(-20rem);
+	}
+
+	80% {
+		transform: translateX(20rem);
+	}
+	100% {
 		transform: translateX(0);
 	}
 }

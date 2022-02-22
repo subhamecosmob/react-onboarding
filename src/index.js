@@ -19,6 +19,7 @@ import Login from "./Login";
 import ReactUseCallBack from "./performance/UseCallBack";
 import SecuredRoutes from "./SecuredRoutes";
 import { LoginProvider } from "./contexts/loginContext";
+import Animation from "./Animation";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -47,6 +48,7 @@ ReactDOM.render(
 					<Route path='Fragments' element={<Fragments />} />
 					<Route path='Ref' element={<Ref />} />
 					<Route path='ReactMemo' element={<ReactUseCallBack />} />
+					<Route path='Animation' element={<Animation />} />
 				</Route>
 			</Routes>
 		</LoginProvider>

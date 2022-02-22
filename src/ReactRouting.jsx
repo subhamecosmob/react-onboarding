@@ -19,6 +19,7 @@ const ReactRouting = () => {
 			<Link to='Fragments'>Fragments</Link>
 			<Link to='Ref'>Ref</Link>
 			<Link to='ReactMemo'>React-Memo</Link>
+			<Link to='Animation'>Animation</Link>
 			{isLogin ? (
 				<Link
 					to='Login'

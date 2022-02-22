@@ -15,6 +15,7 @@ const Form = () => {
 		for (let iterator in formData) {
 			formvlaue = `${formvlaue}  ${iterator} : ${formData[iterator]} \n`;
 		}
+
 		formvlaue = formvlaue + "your details are being submitted";
 
 		alert(formvlaue);

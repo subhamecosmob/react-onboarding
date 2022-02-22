@@ -32,7 +32,7 @@ const Login = () => {
 							})
 						}
 						type='text'
-						placeholder='Search...'
+						placeholder='type anything'
 					/>
 				</div>
 				<br></br>
@@ -46,7 +46,7 @@ const Login = () => {
 							})
 						}
 						type='password'
-						placeholder='Search...'
+						placeholder="type anything'"
 					/>
 				</div>
 				<br></br>

@@ -2,11 +2,10 @@ import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LoginContext } from "./contexts/loginContext";
 import { styled } from "@mui/material/styles";
-import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import "./style.css";
-import { ThemeContext, ThemeContextProvider } from "./contexts/themeContext";
+import { ThemeContext } from "./contexts/themeContext";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 	width: 62,

@@ -20,6 +20,9 @@ import ReactUseCallBack from "./performance/UseCallBack";
 import SecuredRoutes from "./SecuredRoutes";
 import { LoginProvider } from "./contexts/loginContext";
 import Animation from "./Animation";
+import { Paper } from "@mui/material";
+
+import { ThemeContextProvider } from "./contexts/themeContext";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -29,29 +32,33 @@ export const Reactcomponent = () => {
 
 ReactDOM.render(
 	<BrowserRouter>
-		<LoginProvider>
-			<ReactRouting />
-
-			<Routes>
-				<Route path='Login' element={<Login />} />
-				<Route element={<SecuredRoutes />}>
-					<Route path='/' element={<Style />} />
-					<Route path='list' element={<List />} />
-					<Route path='httprequest' element={<HttpRequest />} />
-					<Route path='classcomponent' element={<ClassComponent />} />
-					<Route
-						path='conditionalrendering'
-						element={<Conditionalrendering />}
-					/>
-					<Route path='form' element={<Form />} />
-					<Route path='Portals' element={<Portals />} />
-					<Route path='Fragments' element={<Fragments />} />
-					<Route path='Ref' element={<Ref />} />
-					<Route path='ReactMemo' element={<ReactUseCallBack />} />
-					<Route path='Animation' element={<Animation />} />
-				</Route>
-			</Routes>
-		</LoginProvider>
+		<ThemeContextProvider>
+			<Paper
+				style={{ minHeight: "100vh", paddingTop: "1rem", borderRadius: "0px" }}>
+				<LoginProvider>
+					<ReactRouting />
+					<Routes>
+						<Route path='Login' element={<Login />} />
+						<Route element={<SecuredRoutes />}>
+							<Route path='/' element={<Style />} />
+							<Route path='list' element={<List />} />
+							<Route path='httprequest' element={<HttpRequest />} />
+							<Route path='classcomponent' element={<ClassComponent />} />
+							<Route
+								path='conditionalrendering'
+								element={<Conditionalrendering />}
+							/>
+							<Route path='form' element={<Form />} />
+							<Route path='Portals' element={<Portals />} />
+							<Route path='Fragments' element={<Fragments />} />
+							<Route path='Ref' element={<Ref />} />
+							<Route path='ReactMemo' element={<ReactUseCallBack />} />
+							<Route path='Animation' element={<Animation />} />
+						</Route>
+					</Routes>
+				</LoginProvider>
+			</Paper>
+		</ThemeContextProvider>
 	</BrowserRouter>,
 	document.querySelector("#root")
 );

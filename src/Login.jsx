@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { LoginContext } from "./contexts/loginContext";
 
 const Login = ({ username = "", password = "" }) => {
-	const { isLogin, setIslogin } = useContext(LoginContext);
+	const { setIslogin } = useContext(LoginContext);
 	const [formDetails, setFormDetails] = useState({
 		username: username,
 		password: password,

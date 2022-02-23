@@ -84,7 +84,7 @@ const ReactRouting = () => {
 			) : (
 				<Link to='Login'>Login</Link>
 			)}
-			<a>
+			<a href='#'>
 				<FormControlLabel
 					control={
 						<MaterialUISwitch

@@ -2,11 +2,11 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "./contexts/loginContext";
 
-const Login = () => {
+const Login = ({ username = "", password = "" }) => {
 	const { isLogin, setIslogin } = useContext(LoginContext);
 	const [formDetails, setFormDetails] = useState({
-		username: "",
-		password: "",
+		username: username,
+		password: password,
 	});
 
 	let navigate = useNavigate();
@@ -22,6 +22,7 @@ const Login = () => {
 	return (
 		<form onSubmit={onSubmit}>
 			<div className='ui container center'>
+				<h1 className='ui'>type anything to login</h1>
 				<div className='ui fluid labeled input'>
 					<div className='ui label'>username</div>
 					<input
@@ -32,7 +33,8 @@ const Login = () => {
 							})
 						}
 						type='text'
-						placeholder='type anything'
+						placeholder='username'
+						data-testid='username-input'
 					/>
 				</div>
 				<br></br>
@@ -46,12 +48,18 @@ const Login = () => {
 							})
 						}
 						type='password'
-						placeholder="type anything'"
+						placeholder='password'
+						data-testid='password-input'
 					/>
 				</div>
 				<br></br>
 				<div className='ui fluid labeled input'>
-					<button className='ui button'>Login</button>
+					<button
+						className='ui button'
+						disabled={!(formDetails.username && formDetails.password)}
+						name='login'>
+						login
+					</button>
 				</div>
 			</div>
 		</form>

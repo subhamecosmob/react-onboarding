@@ -1,11 +1,10 @@
 import ReactDOM from "react-dom";
 
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import List from "./List";
 import Conditionalrendering from "./Conditionalrendering";
 import Style from "./Style";
 import HttpRequest from "./HttpRequest";
-import CustomHook from "./CustomHook";
 import Form from "./Form";
 import ClassComponent from "./ClassComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -13,8 +12,6 @@ import ReactRouting from "./ReactRouting";
 import Portals from "./Portals";
 import Fragments from "./Fragments";
 import Ref from "./Ref";
-import ReactMemo from "./performance/ReactMemo";
-import UseMemo from "./performance/UseMemo";
 import Login from "./Login";
 import ReactUseCallBack from "./performance/UseCallBack";
 import SecuredRoutes from "./SecuredRoutes";

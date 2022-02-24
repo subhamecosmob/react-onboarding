@@ -20,6 +20,7 @@ import Animation from "./Animation";
 import { Paper } from "@mui/material";
 
 import { ThemeContextProvider } from "./contexts/themeContext";
+import ThemeChanger from "./ThemeChanger";
 
 export const Reactcomponent = () => {
 	const [input, setInput] = useState("");
@@ -34,6 +35,7 @@ ReactDOM.render(
 				style={{ minHeight: "100vh", paddingTop: "1rem", borderRadius: "0px" }}>
 				<LoginProvider>
 					<ReactRouting />
+					<ThemeChanger />
 					<Routes>
 						<Route path='Login' element={<Login />} />
 						<Route element={<SecuredRoutes />}>

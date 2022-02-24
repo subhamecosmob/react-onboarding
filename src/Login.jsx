@@ -1,3 +1,4 @@
+import { Button, FormControl } from "@mui/material";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "./contexts/loginContext";
@@ -54,12 +55,15 @@ const Login = ({ username = "", password = "" }) => {
 				</div>
 				<br></br>
 				<div className='ui fluid labeled input'>
-					<button
-						className='ui button'
+					<Button
+						type='submit'
 						disabled={!(formDetails.username && formDetails.password)}
-						name='login'>
-						login
-					</button>
+						name='login'
+						disabl
+						color='primary'
+						variant='contained'>
+						Login
+					</Button>
 				</div>
 			</div>
 		</form>
